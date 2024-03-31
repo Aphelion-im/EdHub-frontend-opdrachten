@@ -1,0 +1,2 @@
+https://edhub.novi.nl/study/courses/515/content/12663
+https://github.com/hogeschoolnovi/frontend-javascript-destructuring

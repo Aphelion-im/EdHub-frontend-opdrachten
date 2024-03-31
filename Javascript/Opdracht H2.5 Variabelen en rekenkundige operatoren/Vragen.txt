@@ -1,0 +1,7 @@
+isRaining = false;
+
+Er staat 
+
+!isRaining && temperatuur > 23. 
+
+Klopt niet, want !isRaining = true --> isRaining = true.

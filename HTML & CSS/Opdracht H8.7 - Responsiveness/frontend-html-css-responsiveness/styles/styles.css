@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+    4. Media Queries
+////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+/* Root font size */
+/* https://edhub.novi.nl/study/courses/514/content/14396 */
+html {
+    /* voor mobiel */
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* https://coolors.co/f9c48b-f69051-f26d40-260803-fdefec */
+:root {
+    --color-peach: #F9C48B;
+    --color-atomic-tangerine: #F69051;
+    --color-burnt-sienna: #F26D40;
+    --color-black-bean: #260803;
+    --color-seashell: #FDEFEC;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+body {
+    /* For mobile */
+    background-color: var(--color-burnt-sienna);
+}
+/* Px omzetten naar rem units. Zelfs border-radius. */
+section {
+    background-color: var(--color-peach);
+    border-radius: 1rem;
+    width: 90%;
+    padding: 1.5rem 2rem;
+    margin: 1rem auto;
+}
+
+/*////////////////////////
+    2. Media Queries
+////////////////////////*/
+@media screen and (min-width: 900px) {
+    /* voor tablets */
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        background-color: var(--color-atomic-tangerine);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* voor desktops en groter */
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: var(--color-seashell);
+    }
+}

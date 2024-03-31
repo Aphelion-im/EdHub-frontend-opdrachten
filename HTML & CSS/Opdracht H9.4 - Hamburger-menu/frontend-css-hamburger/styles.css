@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --color-1: #D84282;
+}
+
+#menu {
+    width: 100px;
+    height: 15px;
+    background-color: var(--color-1);
+    margin-top: 48px;
+}
+
+#menu::before {
+    content:"";
+    width: 100px;
+    height: 15px;
+    background-color: var(--color-1);
+    display: inline-block;
+    transform: translateY(-24px);
+}
+
+#menu::after {
+    content:"";
+    width: 100px;
+    height: 15px;
+    background-color: var(--color-1);
+    display: inline-block;
+    transform: translateY(6px);
+}
+
+/* Nova heeft de uitwerking met position absolute gedaan ipv translateY */

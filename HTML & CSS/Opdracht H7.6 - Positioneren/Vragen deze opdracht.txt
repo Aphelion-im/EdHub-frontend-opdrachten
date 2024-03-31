@@ -1,0 +1,6 @@
+https://github.com/hogeschoolnovi/frontend-css-positioneren
+
+6. Helaas geeft de browser automatisch witruimte weer tussen afbeeldingen en opvolgende elementen. 
+Voor deze ene keer mag je daarom negatieve margin gebruiken, om ze tegen elkaar aan te krijgen.
+Q: Wat is dan wel de juiste manier?
+A:

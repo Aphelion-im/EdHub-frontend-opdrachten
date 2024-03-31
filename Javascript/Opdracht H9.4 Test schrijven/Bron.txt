@@ -1,0 +1,4 @@
+https://edhub.novi.nl/study/courses/515/content/12607
+https://vimeo.com/536392443/df30c025e8 (Testen met Jest)
+https://edhub.novi.nl/study/courses/515/content/12609
+https://web.microsoftstream.com/video/98945f37-06d7-4d56-9c35-7e859629836a (Automatisch testen met Jest (verwerkings opdracht))

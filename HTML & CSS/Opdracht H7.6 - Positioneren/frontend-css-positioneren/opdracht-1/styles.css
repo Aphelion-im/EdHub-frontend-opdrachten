@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Default style */
+.recipe-card {
+    /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
+    margin: 80px auto;
+    /* Dit element heeft een vaste breedte van 350 pixels */
+    width: 350px;
+}
+
+/* - Vul dit document aan met jouw eigen css! - */
+:root {
+    --lightgrey: #F7F7F7;
+    --darkgrey: #d3d3d3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+article {
+    border: 2px solid var(--darkgrey);
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+article img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+article p {
+    padding: 8px;
+    font-weight: 700;
+}
+
+.bar {
+    background-color: var(--lightgrey);
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -7px;
+    padding: 4px;
+}
+
+.bar img {
+    width: 15px;
+    margin-right: 8px;
+}
+
+.bar img ~ span {
+    margin-right: 16px;
+}
+
+article .favorite {
+    width: 25px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}

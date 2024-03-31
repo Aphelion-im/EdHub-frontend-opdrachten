@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    /* This defines what 1rem is. 1 rem = 10px; 10px/16px = 62.5%. 1.6rem = 16px. */
+    font-size: 62.5%;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color-1);
+    color: var(--text-color-1);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+/* CSS Variables */
+/* WebStorm: Alt + Enter to convert from hex to hsl */
+:root {
+    --text-color-1: hsl(223, 10%, 36%);
+    --contrast-color-1: #865B9A;
+    --background-color-1: #DFD9E2;
+}
+
+/* Typography */
+h1 {
+    color: var(--contrast-color-1);
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: var(--contrast-color-1);
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+h3 {
+    color: var(--contrast-color-1);
+}
+
+/* List */
+ul {
+    list-style-type: square;
+}
+
+/* Buttons */
+button {
+    background-color: var(--contrast-color-1);
+    border: 2px ridge grey;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 3px 5px;
+    transition: filter 250ms ease-in;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+#introduction {
+    font-weight: 700;
+}

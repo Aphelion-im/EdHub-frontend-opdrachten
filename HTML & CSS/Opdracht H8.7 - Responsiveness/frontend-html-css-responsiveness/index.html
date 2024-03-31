@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Responsive page</title>
+</head>
+<body>
+<main>
+    <section>
+        <h2>EM en REM</h2>
+        <p>
+            Pixels noemen we een <em>absolute maat</em>. Pixels zijn namelijk niet afhankelijk van andere elementen.
+            Maar
+            naast deze eenheid, kennen we binnen web development nog een aantal andere, <em>relatieve maten:</em> EM en REM.</p>
+        <p>
+            Maar waarom dan EM én REM? Het verschil tussen deze twee zit 'm in <em>overerving</em>. REM is gebaseerd op
+            de instelling van het root HTML-element. Dus iedere maat die je uitdrukt in REM, neemt de HTML-rootgrootte
+            als basis voor de berekening. <code>2rem</code> betekent dus overal op de pagina 12 pixels.
+        </p>
+        <p>
+            EM, daarentegen, is gebaseerd op de font-size van het <em>bovenliggende parent-element</em>. En dit kan dus
+            per element verschillen! <code>2em</code> betekent in een parent met een font-size van <code>16px</code> dus
+            iets anders dan in een parent met een font-size van <code>24px</code>. Dit zorgt ervoor dat geneste
+            elementen die EM gebruiken voor hun grootte, soms afmetingen aannemen die je in eerste instantie niet had
+            verwacht.
+        </p>
+    </section>
+    <section>
+        <h2>Viewport width- en height</h2>
+        <p>De eenheden <code>vw</code> (viewport width) en <code>vh</code> (viewport height) zijn ook relatieve maten.
+            Maar in tegenstelling tot percentages, zijn ze niet afhankelijk van het omwikkelende element, maar van het
+            <em>browserscherm</em>. Een breedte van <code>100vw</code> betekent 100% van de huidige breedte van het
+            browserscherm. Een hoogte van <code>20vw</code> betekent 20% van de huidige hoogte van het browserscherm.
+            Past de gebruiker de schermgrootte aan? Dan veranderen de verhoudingen mee.</p>
+        <img src="assets/novi-responsive.png" alt="Novi">
+        <p>Gebruik deze maten nooit om de hoogte van jouw navigatiebalk of tekstgroottes mee in te stellen.
+            Viewport-maten zijn vooral erg handig wanneer elementen het scherm moeten vullen, zoals bijvoorbeeld een
+            achtergrondkleur of afbeelding. </p>
+    </section>
+</main>
+</body>
+</html>
